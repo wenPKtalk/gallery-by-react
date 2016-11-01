@@ -36,11 +36,11 @@ module.exports = {
     }
   },
   module: {
-    preLoaders: [{
-      test: /\.(js|jsx)$/,
-      exclude: /node_modules/,
-      loader: 'eslint-loader'
-    }],
+    // preLoaders: [{
+    //   test: /\.(js|jsx)$/,
+    //   exclude: /node_modules/,
+    //   loader: 'eslint-loader'
+    // }],
     loaders: [{
       test: /\.(js|jsx)$/,
       exclude: /node_modules/,
@@ -56,7 +56,7 @@ module.exports = {
       loader: 'json-loader'
     },{
       test: /\.(png|jpg|woff|woff2)$/,
-      loader: 'url-loader?limit=8192'
+      loader: 'url-loader?limit=100000'
     }]
   },
 
